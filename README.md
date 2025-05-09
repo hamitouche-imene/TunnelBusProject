@@ -35,7 +35,7 @@ L’ordre d’arrivée est respecté car les bus attendent dans une file avec pt
 Le bus qui attend le plus longtemps passera dès que c’est possible.
 
   Cet algorithme peut être retenu comme une solution efficace pour protéger le tunnel, car il garantit une gestion correcte de la synchronisation entre les bus circulant
-   dans des directions opposées (X -> Y et Y -> X). L'utilisation des sémaphores et des mutex permet de gérer les accès concurrents au tunnel de manière sûre, évitant ainsi
+   dans des directions opposées (X -> Y et Y -> X). L'utilisation des mutex permet de gérer les accès concurrents au tunnel de manière sûre, évitant ainsi
     les collisions ou les blocages. Chaque bus attend son tour en respectant les règles de priorité définies, ce qui assure une circulation fluide et ordonnée.
     De plus, l'algorithme prend en compte le fait que plusieurs bus peuvent attendre pour entrer dans le tunnel, et il permet de libérer les ressources de manière
     optimale en signalant lorsque le tunnel devient disponible pour la direction opposée. En somme, il offre une solution fiable et sécurisée pour la gestion du tunnel
